@@ -1,0 +1,15 @@
+def rotate(num):
+    rev_num=0
+    if num < 0:
+        min= -1
+        num *= -1
+    else:
+        min= 1
+    while num % 10 ==0:
+        num //= 10
+    while num:
+        rev_num = rev_num * 10 + num % 10
+        num //= 10
+    rev_num *= min
+    return rev_num
+print(rotate(int(input())))

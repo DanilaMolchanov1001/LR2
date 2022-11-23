@@ -1,0 +1,11 @@
+def sqr(a,n):
+    eps= 0.001
+    x=1
+    while True:
+        x1 = (((n-1) * x) + (a / (x ** (n-1)))) / n
+        if abs(x1-x) < eps:
+            return x1
+        x = x1
+a = float(input())
+b = int(input())
+print(sqr(a,b))

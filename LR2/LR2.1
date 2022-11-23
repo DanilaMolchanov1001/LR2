@@ -1,0 +1,9 @@
+def pal(num):
+       num_c = num
+       rev = 0
+       while(num):
+           last = num % 10
+           rev = rev * 10 + last
+           num = num // 10
+       return rev == num_c
+print(pal(int(input())))

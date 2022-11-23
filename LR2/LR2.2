@@ -1,0 +1,8 @@
+def sor(lis):
+    lists = []
+    lists.append(list(filter(lambda x: x % 2 == 0, lis)))
+    lists.append(list(filter(lambda x: x % 3 == 0, lis)))
+    lists.append(list(filter(lambda x: x % 5 == 0, lis)))
+    return lists
+list_i= list(map(int, input().split()))
+print(sor(list_i))
